@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandhya Sundar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #fff, #333);
+            color: black;
+            padding: 60px 20px;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 3px solid #fff;
+        }
+        nav {
+            background: #fff;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            color: #777;
+        }
+        .divider {
+            width: 60%;
+            height: 4px;
+            background: linear-gradient(to right, #fff, #333);
+            margin: 30px auto;
+            border-radius: 2px;
+        }
+        section {
+            margin: 50px auto;
+            padding: 40px;
+            background: #fff;
+            color: #000;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 900px;
+            text-align: center;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .skill-box {
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: transform 0.3s;
+        }
+        .skill-box:hover {
+            transform: scale(1.1);
+        }
+        h2 {
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        footer {
+            background: #fff;
+            color: black;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            border-top: 3px solid #000;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s, transform 0.3s;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .btn:hover {
+            background: #555;
+            color: #fff;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sandhya Sundar</h1>
+        <p>Passionate about innovation & technology</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate individual driven by curiosity and innovation, striving for excellence and meaningful impact.</p>
+    </section>
+    <div class="divider"></div>
+    
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">Zoho Creator</div>
+            <div class="skill-box">Paper Presentation</div>
+        </div>
+    </section>
+    <div class="divider"></div>
+    
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>Zoho Creator (2024)</h3>
+        <p>Worked on custom applications, improving business processes.</p>
+        <h3>Wish Tree Consultants (2023)</h3>
+        <p>Created and edited PowerPoint presentations for better clarity.</p>
+    </section>
+    <div class="divider"></div>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <h3>Alumni Management Portal</h3>
+        <p>A platform developed using Zoho Creator to help alumni and institutions stay connected, featuring personalized profiles, event updates, and networking opportunities.</p>
+        <h3>FitFlex</h3>
+        <p>A fitness tracking web application that helps users monitor workouts, set goals, and maintain a healthy lifestyle.</p>
+        <h3>QR Code Generator for Hall Tickets</h3>
+        <p>A QR Code Generator that helps students access their hall tickets digitally.</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HallTicketInfo" alt="QR Code for Hall Ticket">
+    </section>
+    <div class="divider"></div>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: sandhyasundar52@gmail.com</p>
+        <p>Phone: +91 7358565225</p>
+        <a class="btn" href="mailto:sandhyasundar52@gmail.com">Get in Touch</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Sandhya Sundar. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
